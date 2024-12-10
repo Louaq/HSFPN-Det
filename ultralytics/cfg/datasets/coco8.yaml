@@ -1,0 +1,10 @@
+train: D:/Download/yolov8/pest/datasets/train/images # train images (relative to 'path') 4 images
+val: D:/Download/yolov8/pest/datasets/valid/images # val images (relative to 'path') 4 images
+test: D:/Download/yolov8/pest/datasets/test/images # test images (optional)
+
+
+nc: 4
+names: ['leaf spot disease', 'Brownspot', 'Tungro', 'Bacterial blight']
+
+#  叶斑病，褐斑病，东格鲁病毒病，细菌性枯萎病
+# 数据的yaml文件
