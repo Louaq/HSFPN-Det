@@ -105,6 +105,14 @@ Run the Detect.py script to test the detection, if no errors are reported, the n
 
 
 
+# dataset
+
+google driver: https://drive.google.com/file/d/1UJcbH2cKLstZdyEJPGv_Hb3GP06MYJff/view?usp=sharing
+
+
+
+
+
 # Training script train.py
 
 Find the train.py file in the root directory, the comments have been written clearly as below:
