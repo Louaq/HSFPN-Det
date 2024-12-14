@@ -8,9 +8,9 @@ Go to the official python website: [https://www.python.org/](https://www.python.
 
 
 Once the installation is complete, run: python in a command line window to see the results of the 
-installation, as shown below:
+installation
 
-![](https://yangyang666.oss-cn-chengdu.aliyuncs.com/typoraImages/Snipaste_2024-05-23_15-14-22.png)
+
 
 At this point, the Python installation is complete, and the next step is to install anaconda, a python
 virtual environment that is particularly good for managing python
@@ -70,7 +70,7 @@ changed.**
 Below is an example of a yaml file, the others are similarly structured, just with different parameters:
 
 # Installation of the project's environment 
-(very important)
+**(very important)**
 
 > Environment configuration is very important, I was with the environment for about a week, in
 the middle of the experience of a variety of errors, package incompatibility problems and
@@ -85,9 +85,9 @@ directory of the project, and use it directly when creating the virtual environm
 Then type conda env create -f environment.yml in the anaconda prompt terminal to create a virtual
 environment based on the environment.yml file. After creating the environment, check whether
 the environment exists through the conda env list, as shown in the following figure, which
-indicates that the creation is successful:
+indicates that the creation is successful.
 
-![](https://yangyang666.oss-cn-chengdu.aliyuncs.com/typoraImages/Snipaste_2024-05-23_16-35-14.png)
+
 
 If there are torch-related errors when installing, the probability is that your graphics card driver
 does not match the version of the torch package in here, this problem needs to be modified on its
@@ -107,11 +107,9 @@ Run the Detect.py script to test the detection, if no errors are reported, the n
 
 # dataset
 
-google driver: https://drive.google.com/file/d/1UJcbH2cKLstZdyEJPGv_Hb3GP06MYJff/view?usp=sharing
+google driver: https://drive.google.com/file/d/1UJcbH2cKLstZdyEJPGv_Hb3GP06MYJff/view?usp=sharinghu
 
-
-
-
+hugging face:https://huggingface.co/datasets/yassAQ/pest_diseases
 
 # Training script train.py
 
@@ -125,21 +123,21 @@ from ultralytics import YOLO
 if __name__ == '__main__':
     model = YOLO('yolov8-HSFPN.yaml')
 
-    # model.load('yolov8n.pt') # 是否加载预训练权重,科研不建议大家加载否则很难提升精度
+    # model.load('yolov8n.pt') 
 
     model.train(data=r'D:/Downloads/YOLOv8/datasets/data.yaml',
-                # 如果大家任务是其它的'ultralytics/cfg/default.yaml'找到这里修改task可以改成detect, segment, classify, pose
+ 
                 cache=False,
                 imgsz=640,
                 epochs=150,
-                single_cls=False,  # 是否是单类别检测
+                single_cls=False,  
                 batch=4,
                 close_mosaic=10,
                 workers=0,
                 device='0',
-                optimizer='SGD', # using SGD
-                # resume='runs/train/exp21/weights/last.pt', # 如过想续训就设置last.pt的地址
-                amp=True,  # 如果出现训练损失为Nan可以关闭amp
+                optimizer='SGD', 
+                # resume='runs/train/exp21/weights/last.pt', 
+                amp=True,  
                 project='runs/train',
                 name='exp',
                 )
@@ -225,8 +223,8 @@ accordingly, otherwise errors will be reported**
 
 > python == 3.9.7
 > pytorch == 1.12.1 
-> timm == 0.9.12  # 此安装包必须要
-> mmcv-full == 1.6.2  # 不安装此包部分关于dyhead的代码运行不了以及Gold-YOLO
+> timm == 0.9.12 
+> mmcv-full == 1.6.2 
 
 
 
@@ -265,6 +263,7 @@ second one**
 is due to the validation of the set of some of the special pictures lead to)
 Find rect=mode in the build_dataset function in the DetectionTrainer class of 
 ultralytics/models/yolo/detect/train.py
+
 ```py
 2. Running the detect.py file while reasoning reported a shape mismatch error
 Find ultralytics/engine/predictor.py and find the function def pre_transform(self, im), 
