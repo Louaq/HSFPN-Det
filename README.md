@@ -1,4 +1,20 @@
-[TOC]
+```markdown
+# **content**
+- [Installing Python](# Installing Python)
+- [Installing anaconda](# Installing anaconda)
+- [Installing Pycharm](# Installing Pycharm)
+- [Introduction to YOLOv8 Catalog Structure](# Introduction to YOLOv8 Catalog Structure)
+- [Installation of the project's environment](# Installation of the project's environment )
+  - [Anaconda virtual environment](## Anaconda virtual environment)
+  - [Using virtual environments](## Using virtual environments)
+- [Dataset](# Dataset)
+- [Training script train.py](# Training script train.py)
+- [Start training](# Start training)
+- [Training results](# Training results)
+- [Summarization](# Summarization)
+- [rule of thumb](# rule of thumb)
+  - [The solution to some of the reported errors is here](## The solution to some of the reported errors is here)
+```
 
 
 
@@ -110,7 +126,7 @@ Run the Detect.py script to test the detection, if no errors are reported, the n
 
 
 
-# dataset
+# Dataset
 
 google driver: https://drive.google.com/file/d/1UJcbH2cKLstZdyEJPGv_Hb3GP06MYJff/view?usp=sharinghu
 
