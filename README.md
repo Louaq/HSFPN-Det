@@ -1,25 +1,3 @@
-```markdown
-# **content**
-- [Installing Python](# Installing Python)
-- [Installing anaconda](# Installing anaconda)
-- [Installing Pycharm](# Installing Pycharm)
-- [Introduction to YOLOv8 Catalog Structure](# Introduction to YOLOv8 Catalog Structure)
-- [Installation of the project's environment](# Installation of the project's environment )
-  - [Anaconda virtual environment](## Anaconda virtual environment)
-  - [Using virtual environments](## Using virtual environments)
-- [Dataset](# Dataset)
-- [Training script train.py](# Training script train.py)
-- [Start training](# Start training)
-- [Training results](# Training results)
-- [Summarization](# Summarization)
-- [rule of thumb](# rule of thumb)
-  - [The solution to some of the reported errors is here](## The solution to some of the reported errors is here)
-```
-
-
-
-
-
 # Installing Python
 
 Go to the official python website: [https://www.python.org/](https://www.python.org/) to download and install it.
