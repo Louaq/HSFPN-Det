@@ -1,4 +1,6 @@
-# Installing Python
+# Introduction
+
+## Installing Python
 
 Go to the official python website: [https://www.python.org/](https://www.python.org/) to download and install it.
 
@@ -14,7 +16,7 @@ installation
 At this point, the Python installation is complete, and the next step is to install anaconda, a python
 virtual environment that is particularly good for managing python
 
-# Installing anaconda
+## Installing anaconda
 
 Go to anaconda's official website: [https://www.anaconda.com/download/success](https://www.anaconda.com/download/success) to download and install it:
 
@@ -26,7 +28,7 @@ After successful installation, it will appear in the start menu as shown below:
 
 anaconda installation is complete, next install pycharm, which is mainly used for writing code
 
-# Installing Pycharm
+## Installing Pycharm
 
 ![](https://yangyang666.oss-cn-chengdu.aliyuncs.com/typoraImages/Snipaste_2024-05-23_15-23-47.png)
 
@@ -38,7 +40,7 @@ Students can apply for the educational version
 
 And, all software installations are complete.
 
-# Introduction to YOLOv8 Catalog Structure
+## Introduction to YOLOv8 Catalog Structure
 
 First introduce the entire project's table of contents:
 
@@ -68,7 +70,7 @@ changed.**
 
 Below is an example of a yaml file, the others are similarly structured, just with different parameters:
 
-# Installation of the project's environment 
+## Installation of the project's environment 
 **(very important)**
 
 > Environment configuration is very important, I was with the environment for about a week, in
@@ -106,9 +108,9 @@ Run the Detect.py script to test the detection, if no errors are reported, the n
 
 # Dataset
 
-google driver: https://drive.google.com/file/d/1UJcbH2cKLstZdyEJPGv_Hb3GP06MYJff/view?usp=sharinghu
+Google Driver: https://drive.google.com/file/d/1UJcbH2cKLstZdyEJPGv_Hb3GP06MYJff/view?usp=sharinghu
 
-hugging face:https://huggingface.co/datasets/yassAQ/pest_diseases
+Hugging Face: https://huggingface.co/datasets/yassAQ/pest_diseases
 
 # Training script train.py
 
@@ -122,8 +124,6 @@ from ultralytics import YOLO
 if __name__ == '__main__':
     model = YOLO('yolov8-HSFPN.yaml')
 
-    # model.load('yolov8n.pt') 
-
     model.train(data=r'D:/Downloads/YOLOv8/datasets/data.yaml',
  
                 cache=False,
@@ -135,7 +135,6 @@ if __name__ == '__main__':
                 workers=0,
                 device='0',
                 optimizer='SGD', 
-                # resume='runs/train/exp21/weights/last.pt', 
                 amp=True,  
                 project='runs/train',
                 name='exp',
@@ -158,8 +157,8 @@ warnings.filterwarnings('ignore')
 from ultralytics import YOLO
 
 if __name__ == '__main__':
-    model = YOLO('D:/Downloads/YOLOv8/result/result_8_HSFPN/train/exp/weights/best.pt') # select your model.pt path
-    model.predict(source='D:/Downloads/YOLOv8/ultralytics/assets',
+    model = YOLO('best.pt') # select your model.pt path
+    model.predict(source='assets',
                   imgsz=640,
                   project='runs/detect',
                   name='exp',
@@ -201,16 +200,6 @@ need at the end, and last.pt is the result of the last training.
 
 ![](https://yangyang666.oss-cn-chengdu.aliyuncs.com/typoraImages/Snipaste_2024-05-23_16-05-47.png)
 
-# Summarization
-
-**I have already done the improvement work of the whole project, if you reproduce it, you only
-need to install the corresponding environment, modify the parameters of train.py, run train.py
-tostart training; modify the parameters of Detect.py, you can detect. Currently, the project is
-only for the detection task, and no improvements have been made for segmentation and
-classification.**
-
-
-
 
 
 # rule of thumb
@@ -244,7 +233,7 @@ go to Baidu search how to change the download mirror source can be repaired!**
 
 
 
-## The solution to some of the reported errors is here
+# The solution to some of the reported errors is here
 
 **(1)Nan values appear for loss during training.**
    Try turning off AMP mixed precision training.
