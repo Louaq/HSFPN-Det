@@ -9,7 +9,7 @@ if __name__ == '__main__':
               imgsz=640,
               batch=4,
               # rect=False,
-              # save_json=True, # 这个保存coco精度指标的开关
+              # save_json=True, 
               project='runs/val',
               name='exp',
               )

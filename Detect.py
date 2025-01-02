@@ -3,8 +3,8 @@ warnings.filterwarnings('ignore')
 from ultralytics import YOLO
 
 if __name__ == '__main__':
-    model = YOLO('D:/Download/yolov8/weights/triplet.pt') # select your model.pt path
-    model.predict(source='D:/Download/yolov8/test_images',
+    model = YOLO('D:/path/to/weight/') # select your model.pt path
+    model.predict(source='D:/path/to/image',
                   imgsz=640,
                   project='runs/detect',
                   name='exp',
