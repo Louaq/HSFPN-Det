@@ -56,7 +56,7 @@ inside source, run the script to start the detection, and save the results in th
 
 
 
-# rule of thumb
+# Rule of thumb
 
 **（1）The following are the versions of two important libraries, which must be downloaded 
 accordingly, otherwise errors will be reported**
