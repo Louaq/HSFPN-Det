@@ -71,8 +71,10 @@ your own system, or because of a conflict between the environments in which it i
 
 We recommend that you install offline in the form of the following address you can find their own version, 
 download to the local installation.
-    https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
-    https://download.openmmlab.com/mmcv/dist/index.html
+
+https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
+
+https://download.openmmlab.com/mmcv/dist/index.html
 
 
 
@@ -95,12 +97,11 @@ second one**
     python -m torch.distributed.launch --nproc_per_node 2 train.py
 
 **(3) For the runtime of some of the error resolution**
-    1. If the validation of the training process reported an error (mainly some shape mismatch error this 
+1. If the validation of the training process reported an error (mainly some shape mismatch error this 
 is due to the validation of the set of some of the special pictures lead to)
 Find rect=mode in the build_dataset function in the DetectionTrainer class of 
 ultralytics/models/yolo/detect/train.py
 
-```py
 2. Running the detect.py file while reasoning reported a shape mismatch error
 Find ultralytics/engine/predictor.py and find the function def pre_transform(self, im), 
 change auto to False in LetterBox.
@@ -109,7 +110,7 @@ change auto to False in LetterBox.
 Find the file 'ultralytics/engine/validator.py' and find 'class
 BaseValidator:' and then in its 'call ' self.args.half = self.device.type ! = 'cpu' # force FP16 val during training with
 self.args.half = False below the line of code
-```
+
 
 **(4) For the nc changes in the yaml file**
 No need to modify it, the model will automatically get it based on the profile of your dataset.
