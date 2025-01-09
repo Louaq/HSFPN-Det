@@ -1,3 +1,7 @@
+<div align="center">
+  中文 | <a href="./README.md">English</a> </a>
+</div>
+
 # 数据集
 
 Google Driver: https://drive.google.com/file/d/1UJcbH2cKLstZdyEJPGv_Hb3GP06MYJff/view?usp=sharinghu
