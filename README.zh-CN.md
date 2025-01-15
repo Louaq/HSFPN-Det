@@ -6,7 +6,7 @@
 
 Google Driver: https://drive.google.com/file/d/1UJcbH2cKLstZdyEJPGv_Hb3GP06MYJff/view?usp=sharinghu
 
-Hugging Face: https://huggingface.co/datasets/yassAQ/pest_diseases
+Hugging Face: https://huggingface.co/datasets/loupk/pest_diseases
 
 # 如何训练
 
