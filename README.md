@@ -5,9 +5,9 @@
 
 # Dataset
 
-Google Driver: https://drive.google.com/file/d/1UJcbH2cKLstZdyEJPGv_Hb3GP06MYJff/view?usp=sharinghu
+Google Driver: [link](https://drive.google.com/file/d/1UJcbH2cKLstZdyEJPGv_Hb3GP06MYJff/view?usp=sharinghu)
 
-Hugging Face: https://huggingface.co/datasets/loupk/pest_diseases
+Hugging Face: [link](https://huggingface.co/datasets/loupk/pest_diseases)
 
 # How to train
 
