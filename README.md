@@ -3,13 +3,17 @@
   English | <a href="./README.zh-CN.md">中文</a> </a>
 </div>
 
-# Dataset
+## 🔥 Updates
+- (2025.04.26) Waiting submission
+
+
+## 👉 Dataset
 
 Google Driver: [link](https://drive.google.com/file/d/1UJcbH2cKLstZdyEJPGv_Hb3GP06MYJff/view?usp=sharinghu)
 
 Hugging Face: [link](https://huggingface.co/datasets/loupk/pest_diseases)
 
-# How to train
+## 👉 Train
 
 Find the train.py file in the root directory, the comments have been written clearly as below:
 
