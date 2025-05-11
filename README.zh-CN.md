@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
     # model.load('yolov8n.pt') 
 
-    model.train(data=r'D:/Downloads/YOLOv8/datasets/data.yaml',
+    model.train(data=r'/path/to/datasets/',
                
                 cache=False,
                 imgsz=640,
@@ -48,8 +48,8 @@ warnings.filterwarnings('ignore')
 from ultralytics import YOLO
 
 if __name__ == '__main__':
-    model = YOLO('D:/Downloads/YOLOv8/result/result_8_HSFPN/train/exp/weights/best.pt') # select your model.pt path
-    model.predict(source='D:/Downloads/YOLOv8/ultralytics/assets',
+    model = YOLO('/path/to/ptht') # select your model.pt path
+    model.predict(source='assets',
                   imgsz=640,
                   project='runs/detect',
                   name='exp',
