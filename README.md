@@ -5,7 +5,7 @@
 
 ## 🔥 Updates
 - (2025.05.09) submission
-- (2025.01.2) upload code
+- (2025.01.02) upload code
 
 ## 👉 Dataset
 
