@@ -4,6 +4,7 @@
 </div>
 
 ## 🔥 Updates
+- (2025.10.28) accept
 - (2025.05.09) submission
 - (2025.01.02) upload code
 
